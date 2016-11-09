@@ -21,6 +21,12 @@ Route::get('/user', function (Request $request) {
 
 Route::group(['middleware' => 'api'], function() {
 
-    Route::resource('usuarios','usuarios controller');
+    Route::GET('plare/pensionistas/','PensionistasController@index');
+    Route::GET('plare/pensionistas/{id}','PensionistasController@show');
+    //Route::POST('plare/pensionistas/add' , 'PensionistasController@create');
+    //Route::PUT('plare/pensionistas/{id}', 'PensionistasController@update');
+    //Route::DELETE('plare/pensionistas/{id}', 'PensionistasController@delete');
+
+
 
 });

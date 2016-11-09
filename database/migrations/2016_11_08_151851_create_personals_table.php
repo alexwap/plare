@@ -27,6 +27,7 @@ class CreatePersonalsTable extends Migration
                 ->references('id')
                 ->on('categoria_personals')
                 ->onDelete('cascade');
+
             $table->timestamps();
         });
     }
