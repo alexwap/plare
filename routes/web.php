@@ -23,6 +23,7 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::get('/plare/usuarios', 'PlareController@usuario');
     Route::get('/plare/pensionistas', 'PlareController@pensionistas');
+    Route::get('/plare/carga_descuentos_varios', 'PlareController@carga_descuentos_varios');
 
 
 

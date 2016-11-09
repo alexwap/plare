@@ -7,7 +7,7 @@
         <div class="container">
 
 
-    eso son los usuarios
+    descuento varios
 
     </div>
     </section>

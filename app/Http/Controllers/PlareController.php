@@ -12,6 +12,7 @@ use App\Http\Requests;
 
 class PlareController extends Controller{
     public function __construct(){
+
     }
     public function index(){
         $rol_user = Rol_user::find( auth()->user()->id );
@@ -44,5 +45,21 @@ class PlareController extends Controller{
 
         return view('plare.pensionistas',compact('rol_user','rol','pensionistas'));
     }
+
+    public function carga_descuentos_varios(){
+        $rol_user = Rol_user::find( auth()->user()->id );
+
+        $rol = Roles::find($rol_user->rol_id);
+
+
+        return view('plare.carga_descuentos_varios',compact('rol_user','rol'));
+
+    }
+
+
+
+
+
+
 
 }
